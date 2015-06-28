@@ -6,10 +6,15 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXFileReference section */
+		5A0DAC861B3FA05200D387E8 /* Parser.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Parser.js; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		5A0DAC7F1B3F9FFC00D387E8 = {
 			isa = PBXGroup;
 			children = (
+				5A0DAC861B3FA05200D387E8 /* Parser.js */,
 			);
 			sourceTree = "<group>";
 		};
