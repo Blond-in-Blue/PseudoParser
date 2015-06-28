@@ -34,10 +34,10 @@ function fileIdentify() {
 
 function parseJava() {
     
-    this.classList = [] // tuple "name, return type"
-    this.functionList = [] // tuple "name, return type"
-    this.variableList = [] // tuple "name, type"
-    this.constantList = [] // tuple "name, type"
+    this.classList = [] // "name, return type"
+    this.functionList = [] // "name, return type"
+    this.variableList = [] // "name, type"
+    this.constantList = [] // "name, type"
     
     this.inspectLine = function(lineString) {
 //        while the end of the line hasn't been reached...
