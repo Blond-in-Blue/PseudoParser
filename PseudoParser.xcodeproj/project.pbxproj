@@ -24,7 +24,7 @@
 		5A0DAC801B3F9FFC00D387E8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0640;
 			};
 			buildConfigurationList = 5A0DAC831B3F9FFC00D387E8 /* Build configuration list for PBXProject "PseudoParser" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -45,6 +45,7 @@
 		5A0DAC841B3F9FFC00D387E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};

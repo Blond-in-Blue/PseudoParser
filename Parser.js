@@ -27,37 +27,45 @@ function fileIdentify() {
         return false
     }
     
-//    I'll need to add alerts in the case that the given file is not the right type, or is not successfully opened
+//    Alerts in the case that the given file is not the right type, or is not successfully opened/read
     
 }
 
 
-function parseJava() {
-    
-    this.classList = [] // "name, return type"
-    this.functionList = [] // "name, return type"
-    this.variableList = [] // "name, type"
-    this.constantList = [] // "name, type"
-    
-    this.inspectLine = function(lineString) {
-//        while the end of the line hasn't been reached...
-        
-//        identify class
-//        identify function + parameters
-//        identify variable declaration
-//        identify constant declaration
-    }
-    
-    this.readLine = function(inFile)) {
-//        var currentLineNumber = 1
-        var currentLineString = "Hello"
-        
-        while (!inFile.eod) {
-//            reassign currentLineString
-            
-//            call inspectLine on currentLineString
-            
-        }
-        
-    }
-}
+//function parseJava() {
+//    
+//    this.classList = [] // "name, return type"
+//    this.functionList = [] // "name, return type"
+//    this.variableList = [] // "name, type"
+//    this.constantList = [] // "name, type"
+//    
+//    this.inspectLine = function(lineString) {
+//        var parsedElements = {}
+//        
+////        check if certain certain keywords exist within the string...
+//        switch(parsedElements[1]) {
+////        identify class
+//               case 'class': {
+//               for (var i = 0; i < parsedElements.options.length; i++) {
+//               
+//               }
+//               }
+////        identify function + parameters
+////        identify variable declaration
+////        identify constant declaration
+//        }
+//    }
+//    
+//    this.readLine = function(inFile)) {
+////        var currentLineNumber = 1
+//        var currentLineString = "Hello"
+//        
+//        while (!inFile.eod) {
+////            reassign currentLineString
+//            
+////            call inspectLine on currentLineString
+//            
+//        }
+//        
+//    }
+//}
