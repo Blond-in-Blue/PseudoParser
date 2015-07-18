@@ -1,0 +1,79 @@
+<!-- PseudoParser.html -->
+
+<html>
+    
+
+    <head>
+
+        <title>Demo</title>
+        
+        <!-- Esprima, a language parser -->
+        <script src = "https://rawgit.com/jquery/esprima/master/esprima.js"></script>
+        <script src = "../Parser.js"></script>
+        <script src ="knockout-3.3.0.js"></script>
+
+    </head>
+
+    <body>
+        
+        <h2>Pseudo Parser</h2>
+        <table style='width: 100%; height:100%'>
+            <tr >
+                <td style ="width:50%" valign="top">
+                    <textarea style="width:100%; height:50%" data-bind="value: input" >
+
+
+                    </textarea>
+                </td>
+                <td valign="top">
+                    <h3>Results</h3>
+                    <h4>Classes</h4>
+                </td>
+            </tr>
+        </table>
+        
+        
+        <script>
+            
+            function DemoViewModel(){
+                
+                self.results = ko.computed(function(){
+                    return parseJavascript(self.input());
+                },this);
+                
+                self.input = ko.observable("\n \
+\n/*A function*/\
+\nfunction Box(width, height){ \
+ \n   \
+  \n  var self = this;\
+ \n\
+  \n  self.width = width;\
+\n\
+\n    self.height = height;\
+\n\
+\n    /**\
+\n    * Shrinks the box by a certain amount by percentage.\
+\n    * howMuch = .5 means the box is now half it's size\
+\n    */\
+\n    self.shrink = function(howMuch){\
+\n\
+\n        //cleaning input\
+\n        howMuch = Math.abs(howMuch);\
+\n\
+\n        self.width *= howMuch;\
+\n\
+\n        self.height *= howMuch\
+\n\
+\n    }\
+\n \
+}");
+            }
+            
+        var model = new DemoViewModel();
+        ko.applyBindings(model);
+            
+        </script>
+        
+    </body>
+    
+</html>
