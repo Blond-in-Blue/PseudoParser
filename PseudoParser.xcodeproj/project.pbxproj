@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		5A0DAC861B3FA05200D387E8 /* Parser.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Parser.js; sourceTree = "<group>"; };
-		5AA1C20B1B56256400A14BC7 /* PseudoParser.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = PseudoParser.html; sourceTree = "<group>"; };
+		5A5855461B5B76FE00332F75 /* Demo */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Demo; sourceTree = "<group>"; };
+		5A5855481B5B775F00332F75 /* Source */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Source; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		5A0DAC7F1B3F9FFC00D387E8 = {
 			isa = PBXGroup;
 			children = (
-				5AA1C20B1B56256400A14BC7 /* PseudoParser.html */,
-				5A0DAC861B3FA05200D387E8 /* Parser.js */,
+				5A5855481B5B775F00332F75 /* Source */,
+				5A5855461B5B76FE00332F75 /* Demo */,
 			);
 			sourceTree = "<group>";
 		};

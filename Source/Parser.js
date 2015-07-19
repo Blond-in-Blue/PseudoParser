@@ -31,6 +31,18 @@ function fileIdentify() {
     
 }
 
+// Utilizes Esprima to parse a Java file
+function parseJava() {
+    // use Esprima parser on file, then recreate returned hierarchy, leaving only classes, functions, variables, and constants (or find a way to make this happen initially instead)
+    this.parseFile = function(filename) {
+        
+    }
+}
+
+
+function parseJavaScript() {
+    
+}
 
 //function parseJava() {
 //    
