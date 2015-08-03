@@ -28,8 +28,17 @@ function Parser() {
             } else if (test.indexOf(commentIndicator) != -1) {
                 // add to JSON
             }
-
-
+        }
+        
+        while (inClass) {
+            if (test.indexOf(functionIndicator) != -1) {
+                // add to JSON
+            } else if (test.indexOf(descriptionIndicator) != -1) {
+                // add to JSON
+            } else if (test.indexOf(commentIndicator) != -1) {
+                // add to JSON
+            }
+            // And detect end of class, setting inClass = false. I'm not sure how this should be done.
         }
     }
     
